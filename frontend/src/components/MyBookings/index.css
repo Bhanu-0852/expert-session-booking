@@ -1,0 +1,78 @@
+.bookings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.search-header {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.email-form {
+  display: flex;
+  gap: 10px;
+}
+
+.email-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  outline: none;
+}
+
+.fetch-btn {
+  padding: 12px 24px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Status Badge Logic */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.pending { background: #fef3c7; color: #92400e; }    /* Yellow */
+.confirmed { background: #dcfce7; color: #166534; }  /* Green */
+.completed { background: #f1f5f9; color: #475569; }  /* Gray */
+
+@media (max-width: 600px) {
+  .email-form {
+    flex-direction: column;
+  }
+  
+  .booking-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
